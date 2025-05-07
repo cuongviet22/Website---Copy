@@ -1,0 +1,25 @@
+.owl-carousel.news {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+}
+
+.owl-carousel.news::-webkit-scrollbar {
+    display: none;
+}
+
+.news {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 300px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.news:active {
+    cursor: grabbing;
+}
+
+

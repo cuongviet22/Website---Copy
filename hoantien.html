@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://cocoshop.vn/ -->
+<!-- http://mauweb.monamedia.net/vanihome/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <!-- Font roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon fontanwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Reset css & grid sytem -->
+    <link rel="stylesheet" href="assets/css/library.css">
+    <!-- Owl Slider css -->
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <!-- Layout -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- index -->
+    <link rel="stylesheet" type="text/css" href="news.html">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl caroucel Js-->
+    <script src="owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="assets/css/new.css">
+</head>
+
+<body>
+    <div class="header scrolling" id="myHeader">
+        <div class="grid wide">
+            <div class="header__top">
+                <div class="navbar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="index.html" class="header__logo">
+                    <img src="assets/logo.png" alt="">
+                </a>
+                <div class="header__search">
+                    <div class="header__search-wrap">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                        <a class="header__search-icon" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__account">
+                    <a href="#my-Login" class="header__account-login">Đăng Nhập</a>
+                    <a href="#my-Register" class="header__account-register">Đăng Kí</a>
+                </div>
+                <!-- Cart -->
+                <div class="header__cart have" href="#">
+                    <i class="fas fa-shopping-basket"></i>
+                    <div class="header__cart-amount">
+                        3
+                    </div>
+                    <div class="header__cart-wrap">
+                        <ul class="order__list">
+                            <li class="item-order">
+                                <div class="order-wrap">
+                                    <a href="1.jpg" class="order-img">
+                                        <img src="assets/img/product/1.jpg" alt="">
+                                    </a>
+                                    <div class="order-main">
+                                        <a href="product.html" class="order-main-name">La Roche-Posay Effaclar Duo+</a>
+                                        <div class="order-main-price">1  x 304.000 ₫</div>
+                                    </div>
+                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                </div>
+                            </li>
+                            <li class="item-order">
+                                <div class="order-wrap">
+                                    <a href="product.html" class="order-img">
+                                        <img src="assets/img/product/2.jpg" alt="">
+                                    </a>
+                                    <div class="order-main">
+                                        <a href="product.html" class="order-main-name">CeraVe Hydrating Facial Cleanser</a>
+                                        <div class="order-main-price">1  x 254.000 ₫</div>
+                                    </div>
+                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                </div>
+                            </li>
+                            <li class="item-order">
+                                <div class="order-wrap">
+                                    <a href="product.html" class="order-img">
+                                        <img src="assets/img/product/3.jpg" alt="">
+                                    </a>
+                                    <div class="order-main">
+                                        <a href="product.html" class="order-main-name">ÁPaula’s Choice Skin Perfecting 2% BHA Liquid Exfoliant</a>
+                                        <div class="order-main-price">1  x 225.000 ₫</div>
+                                    </div>
+                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="total-money">Tổng cộng: 783.000đ</div>
+                        <a href="cart.html" class="btn btn--default cart-btn">Xem giỏ hàng</a>
+                        <a href="pay.html" class="btn btn--default cart-btn orange">Thanh toán</a>
+                        <!-- norcart -->
+                        <!-- <img class="header__cart-img-nocart" src="http://www.giaybinhduong.com/images/empty-cart.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item nav__search">
+                    <div class="nav__search-wrap">
+                        <input class="nav__search-input" type="text" name="" id="" placeholder="Tìm sản phẩm...">
+                    </div>
+                    <div class="nav__search-btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li class="header__nav-item authen-form">
+                    <a href="#" class="header__nav-link">Tài Khoản</a>
+                    <ul class="sub-nav">
+                        <li class="sub-nav__item">
+                            <a href="#my-Login" class="sub-nav__link">Đăng Nhập</a>
+                        </li>
+                        <li class="sub-nav__item">
+                            <a href="#my-Register" class="sub-nav__link">Đăng Kí</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-item index">
+                    <a href="index.html" class="header__nav-link">Trang chủ</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Giới Thiệu</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Sản Phẩm</a>
+                    <div class="sub-nav-wrap grid wide">
+                        <ul class="sub-nav">
+                            <li class="sub-nav__item">
+                                <a href="" class="sub-nav__link heading">La Roche-Posay Effaclar Duo+</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">CeraVe Hydrating Facial Cleanser</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">Paula’s Choice Skin Perfecting 2% BHA Liquid Exfoliant</a>
+                            </li>
+                          
+                   
+                       
+                        </ul>
+                        <ul class="sub-nav">
+                            <li class="sub-nav__item">
+                                <a href="" class="sub-nav__link heading">The Ordinary Niacinamide 10% + Zinc 1%</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">SK-II Facial Treatment Essence</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">Kiehl’s Calendula Deep Cleansing Foaming Face Wash</a>
+                            </li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li class="sub-nav__item">
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">Kiehl’s Rare Earth Deep Pore Cleansing Masque</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">Mặt nạ đất sét Innisfree Super Volcanic Pore Clay Mask 2X</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">Kem dưỡng mắt Some By Mi Retinol Intense Advanced Triple Action</a>
+                            </li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li class="sub-nav__item">
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">Nước hoa hồng không mùi Klairs Supple Preparation</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">Anessa Perfect UV Sunscreen Skincare Milk N SPF50+ PA++++</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.html" class="sub-nav__link">Nước tẩy trang Bioderma Sensibio H2O Micellar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header__nav-item">
+                    <a href="news.html" class="header__nav-link">Tin Tức</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="grid wide">
+            <div class="main__taskbar">
+                <div class="main__breadcrumb">
+                    <div class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">Lustra</a>
+                    </div>
+                    <div class="breadcrumb__item">
+                        <!DOCTYPE html>
+                        <html lang="vi">
+                        <head>
+                          <meta charset="UTF-8" />
+                          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                          <title>Chính sách trả hàng | Lustra</title>
+                          <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+                          <style>
+                            * { box-sizing: border-box; }
+                            body {
+                              margin: 0; padding: 0;
+                              font-family: 'Inter', sans-serif;
+                              background-color: #fffafc; color: #333;
+                              scroll-behavior: smooth;
+                              text-align: center;
+                            }
+                            .container {
+                              max-width: 980px; margin: 60px auto; padding: 0 25px;
+                            }
+                            h1 {
+                              font-size: 48px; color: #8ac5c5;
+                              font-family: 'Playfair Display', serif;
+                              margin-bottom: 60px; font-weight: 600; letter-spacing: 1px;
+                            }
+                            .section {
+                              background: #ffffff;
+                              border-left: 6px solid #8ac5c5;
+                              border-radius: 18px;
+                              padding: 45px 65px;
+                              margin-bottom: 50px;
+                              box-shadow: 0 10px 35px rgba(0,0,0,0.05);
+                              animation: fadeIn 1.2s ease;
+                              text-align: left;
+                              transition: all 0.3s ease;
+                            }
+                            .section:hover {
+                              transform: translateY(-2px);
+                              box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+                            }
+                            .section h2 {
+                              font-size: 32px; color: #398282;
+                              margin-bottom: 24px;
+                              font-family: 'Playfair Display', serif;
+                              position: relative; padding-left: 48px;
+                            }
+                            .section h2::before {
+                              content: '✦'; position: absolute;
+                              left: 0; top: 0;
+                              font-size: 28px; color: #398282;
+                            }
+                            .section p, .section ul, .section ol, .section table {
+                              font-size: 18px; line-height: 1.85; color: #444;
+                              margin: 0 0 20px 0;
+                            }
+                            .section ul, .section ol {
+                              margin-left: 20px; padding-left: 20px;
+                            }
+                            .section ul li, .section ol li {
+                              margin-bottom: 12px;
+                            }
+                            .section table {
+                              width: 100%; border-collapse: collapse;
+                            }
+                            .section table, .section th, .section td {
+                              border: 1px solid #ddd;
+                            }
+                            .section th, .section td {
+                              padding: 12px; text-align: center;
+                            }
+                            .section th {
+                              background-color: #8ac5c5; color: #fff;
+                            }
+                            .note {
+                              color: #cc0000; font-style: italic;
+                            }
+                            .scroll-top {
+                              position: fixed; bottom: 30px; right: 30px;
+                              background-color: #8ac5c5; color: white;
+                              padding: 12px 16px; border: none;
+                              border-radius: 50px; font-size: 18px;
+                              cursor: pointer; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                              transition: background-color 0.3s ease;
+                            }
+                            .scroll-top:hover { background-color: #d57d95; }
+                            @keyframes fadeIn {
+                              from { opacity: 0; transform: translateY(20px); }
+                              to { opacity: 1; transform: translateY(0); }
+                            }
+                            @media (max-width: 768px) {
+                              h1 { font-size: 38px; }
+                              .section { padding: 28px; }
+                              .section h2 { font-size: 26px; padding-left: 30px; }
+                              .section h2::before { font-size: 22px; }
+                            }
+                          </style>
+                        </head>
+                        <body>
+                          <div class="container">
+                            <h1>Chính sách trả hàng- hoàn tiền </h1>
+                        
+                            <div class="section">
+                              <h2>1. Điều kiện áp dụng</h2>
+                              <p><strong>Các trường hợp trả hàng:</strong> Áp dụng với khách hàng mua online tại Website Lustra, khi sản phẩm đến tay bị lỗi do Lustra hoặc đơn vị vận chuyển.</p>
+                              <p><strong>Các trường hợp hoàn tiền:</strong></p>
+                              <ul>
+                                <li>Đơn hàng thanh toán/cọc trước bị hủy bởi Lustra.</li>
+                                <li>Đơn hàng trả về và đã xác minh nhận hàng tại showroom hoặc kho Lustra.</li>
+                                <li>Đơn hàng giao không thành công, đã hoàn về Lustra.</li>
+                                <li>Khách hàng chuyển khoản dư hoặc sai thông tin tài khoản – sẽ hoàn sau khi xác minh nội bộ và với ngân hàng.</li>
+                              </ul>
+                              <p class="note">
+                                * Lustra chỉ xử lý đổi trả trong vòng 7 ngày.<br>
+                                * Phí hoàn trả giao dịch: Khách hàng chịu.<br>
+                                * Phí đóng gói trả hàng: Lustra chịu.
+                              </p>
+                            </div>
+                        
+                            <div class="section">
+                              <h2>2. Cách thức yêu cầu trả hàng – hoàn tiền</h2>
+                              <ol>
+                                <li>Gửi yêu cầu qua số hotline: <strong>1900 626 510</strong></li>
+                                <li>CSKH xác minh và gửi yêu cầu nội bộ xử lý.</li>
+                                <li>Nhận thông báo đồng ý/không đồng ý trả hàng.</li>
+                                <li>Đóng gói và gửi hàng lại qua đơn vị vận chuyển của Lustra.</li>
+                                <li>Hoàn tất thủ tục hoàn tiền hoặc gửi lại hàng theo thỏa thuận.</li>
+                              </ol>
+                            </div>
+                        
+                            <div class="section">
+                              <h2>3. Thời hạn hoàn tiền</h2>
+                              <p>Thời gian xử lý hoàn tiền sau khi xác minh tình trạng đơn hàng: khoảng <strong>3–5 ngày làm việc</strong> (không tính Thứ 7, Chủ nhật, ngày lễ).</p>
+                              <p>Khách hàng có thể chọn phương thức hoàn tiền sau:</p>
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th>Phương thức thanh toán</th>
+                                    <th>Phương thức hoàn tiền</th>
+                                    <th>Lustra xử lý</th>
+                                    <th>Tiền vào tài khoản</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>COD (Thanh toán khi nhận hàng)</td>
+                                    <td>Chuyển khoản</td>
+                                    <td>Tối đa 3 ngày</td>
+                                    <td>1 – 2 ngày</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Thẻ ATM nội địa</td>
+                                    <td>Chuyển khoản</td>
+                                    <td>1 – 2 ngày</td>
+                                    <td>1 – 2 ngày</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Thẻ quốc tế / Visa / Master</td>
+                                    <td>Chuyển khoản</td>
+                                    <td>1 – 2 ngày</td>
+                                    <td>1 – 2 ngày</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p class="note">
+                                * Với thẻ quốc tế hoặc ví điện tử: hoàn tiền có thể mất 1–3 tuần tùy chính sách ngân hàng.<br>
+                                * Nếu sau thời gian trên chưa nhận tiền, vui lòng liên hệ: <strong>contact@lustra.vn.com</strong> hoặc ngân hàng phát hành thẻ.
+                              </p>
+                            </div>
+                        
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                          </div>
+                        </body>
+                        </html>

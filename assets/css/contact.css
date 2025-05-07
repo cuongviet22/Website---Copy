@@ -1,0 +1,185 @@
+/* Tạo khoảng cách hợp lý và căn chỉnh chung cho form */
+.main {
+    padding: 40px 15px; /* Giảm padding bên phải và trái */
+}
+
+/* Định dạng các nhóm thông tin liên hệ */
+.about-us {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us__heading {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Định dạng form nhóm thông tin liên hệ */
+.about-us>.form__group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Thêm khoảng cách giữa các trường input */
+}
+
+.about-us>.form__group div {
+    flex: 1 1 calc(50% - 16px); /* Cho các input chiếm 50% chiều rộng với khoảng cách hợp lý */
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.about-us input,
+.about-us textarea {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.about-us input:focus,
+.about-us textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Định dạng cho nút gửi */
+.about-us .btn {
+    flex: 0 0 100%;
+    width: 220px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease;
+}
+
+.about-us .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+    .about-us>.form__group div {
+        flex: 1 1 100%; /* Các input sẽ chiếm hết chiều rộng trên thiết bị nhỏ hơn */
+    }
+}
+
+@media (max-width: 739px) {
+    .main {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .about-us__heading {
+        font-size: 2rem;
+    }
+
+    .about-us input,
+    .about-us textarea {
+        font-size: 1.4rem;
+    }
+
+    .about-us .btn {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+}
+
+/* Breadcrumbs */
+.main__breadcrumb {
+    margin-bottom: 20px;
+}
+
+/* Bố cục thông tin liên hệ */
+/* Định dạng form nhóm thông tin liên hệ */
+.about-us>.form__group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Thêm khoảng cách giữa các trường input */
+}
+
+/* === BỔ SUNG BỐ CỤC CHO FORM LIÊN HỆ === */
+.input-field {
+    flex: 1 1 calc(33.333% - 16px); /* Chia thành 3 cột đều nhau */
+    min-width: 250px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-field input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive: chuyển thành 1 cột trên mobile */
+@media (max-width: 768px) {
+    .input-field {
+        flex: 1 1 100%;
+    }
+}
+/* === Tạo khoảng cách giữa biểu đồ và form liên hệ === */
+.chart-section {
+    margin-right: 40px;
+}
+
+form#myForm {
+    margin-left: 40px;
+}
+.contact__wrap {
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.contact__img img {
+    width: 120px;
+}
+
+.contact__info {
+    display: block;
+    margin-left: 20px;
+}
+
+.contact__info li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact__link,
+.contact__text {
+    display: block;
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 12px;
+}
+
+.contact__link i,
+.contact__text i {
+    margin-right: 4px;
+}
+
+.contact__link:hover {
+    color: #007bff;
+    transition: all 0.3s;
+}
